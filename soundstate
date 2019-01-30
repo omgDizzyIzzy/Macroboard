@@ -1,0 +1,19 @@
+/*
+   Sound Changer
+   Make sure nircmd is in program directory.
+   Change device names to suit you on lines 11 and 16.
+*/
+sound()
+{
+    static soundstate = 0
+    if (soundstate = 1)
+	{
+	Run, nircmd setdefaultsounddevice "Speakers"
+	soundstate = 0
+	}
+	else
+	{
+	run, nircmd setdefaultsounddevice "Headset"
+	soundstate = 1
+	}
+}
