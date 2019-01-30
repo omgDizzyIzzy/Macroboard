@@ -1,0 +1,13 @@
+nightlight()
+{
+Send, {LWin Down}
+WinActivate, Action Windows.UI.Core.CoreWindow
+Send, {a}
+Sleep, 50
+Send, {LWin Up}
+Sleep, 65
+Click, 259, 930 Left, Down
+Click, 259, 930 Left, Up
+Send, {Escape}
+Return
+}
