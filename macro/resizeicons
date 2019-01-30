@@ -1,0 +1,14 @@
+ResizeIcons()
+{
+    static iconstate = 0
+    if (iconstate = 1)
+	{
+    Send, {LControl Down}{LShift Down}{4}{LControl Up}{LShift Up}
+	iconstate = 0
+	}
+	else
+	{
+    Send, {LControl Down}{LShift Down}{3}{LControl Up}{LShift Up}
+	iconstate = 1
+	}
+}
